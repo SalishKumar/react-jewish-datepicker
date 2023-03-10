@@ -59,7 +59,7 @@ export const ReactJewishDatePicker: React.FC<ReactJewishDatePickerProps> = (
   const [endDay, setEndDay] = React.useState<BasicJewishDay>(
     isRange && isDateRange(value) && getJewishDay(Dayjs(endDateInit))
   );
-  const [isOpen, setOpen] = React.useState(false);
+  const [isOpen, setOpen] = React.useState(true);
   const [hoveredDay, setHoveredDay] = React.useState(null);
   const ref = React.useRef(null);
 
